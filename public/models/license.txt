@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ninja Turtles "Leonardo" Toy
+* source:	https://sketchfab.com/3d-models/ninja-turtles-leonardo-toy-09b99b7941964c818969edf69a72e790
+* author:	coOpsy (https://sketchfab.com/coOpsy)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ninja Turtles "Leonardo" Toy" (https://sketchfab.com/3d-models/ninja-turtles-leonardo-toy-09b99b7941964c818969edf69a72e790) by coOpsy (https://sketchfab.com/coOpsy) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
