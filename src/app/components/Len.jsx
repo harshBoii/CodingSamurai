@@ -10,6 +10,9 @@ import Butt from "./Button.jsx";
 import ThreeModel from './ThreeModel.jsx';
 import Link from "next/link";
 
+// Register the plugin
+gsap.registerPlugin(ScrollTrigger);
+
 
 //Setup Lenis
 
@@ -116,7 +119,8 @@ useGSAP(() => {
           start: "top center",
           end: "bottom center",
           scrub: 1,
-          toggleActions: "play pause reverse pause"
+          toggleActions: "play pause reverse pause",
+          
         }
       });
   }, [])
@@ -146,7 +150,7 @@ return <div className="w-full h-[250vh] bg-zinc-100">
       WelCome To 
       <div className="text-red-400">
       Samurai <span className="Coding text-emerald-600">Coding</span> School
-      <div className="nin absolute inset-0 z-50 pl-140 pt-90">
+      <div className=" pointer-events-none nin absolute inset-0 z-50 pl-140 pt-90">
         <ThreeModel />
       </div>
 

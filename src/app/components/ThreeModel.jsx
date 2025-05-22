@@ -9,7 +9,6 @@ const ThreeModel = () => {
   const modelRef = useRef(null);
 
   useEffect(() => {
-    // Basic Three.js setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -90,10 +89,25 @@ const ThreeModel = () => {
     
     // Cleanup
     return () => {
-      window.removeEventListener('resize', handleResize);
-      controls.dispose();
-      renderer.dispose();
-    };
+    cancelAnimationFrame(animationId);
+
+    scene.remove(model);
+    model.traverse((child) => {
+      if (child.geometry) child.geometry.dispose();
+      if (child.material) {
+        if (Array.isArray(child.material)) {
+          child.material.forEach((m) => m.dispose());
+        } else {
+          child.material.dispose();
+        }
+      }
+    });
+
+    renderer.dispose(); // if you created a custom renderer
+    child.material.map?.dispose();
+    child.material.normalMap?.dispose();
+
+  };
   }, []);
 
   return (
